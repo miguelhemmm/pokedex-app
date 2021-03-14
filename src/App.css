@@ -28,6 +28,10 @@
   color: #61dafb;
 }
 
+ p {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 12px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

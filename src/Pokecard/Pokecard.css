@@ -1,0 +1,37 @@
+.pokecard {
+    margin: 1rem;
+    box-shadow: 7px 10px 12px -5px rgba(0,0,0,0.56);
+    padding: 10px;
+    width: 200px;
+    height: 180px;
+    border-radius: 5px;
+    background: #fcf8ec;
+}
+
+.pokecard-img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+
+}
+
+.pokecard-img:hover {
+    width: 90px;
+    height: 90px;
+}
+
+.pokecard-title {
+    font-weight: bolder;
+    color: #383e56;
+}
+
+.pokecard-text p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: bolder;
+    color: #383e56;
+}
+
+.pokecard-inner {
+    display: inline;
+}

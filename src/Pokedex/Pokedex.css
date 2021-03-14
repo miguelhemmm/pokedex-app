@@ -1,0 +1,83 @@
+.Pokedex-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.Pokedex-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Pokedex-buttons .search-bar {
+  width: 350px;
+}
+
+ .btn-primary {
+    margin-left: .2rem;
+    margin-right: .2rem;
+    background-color: #FFDE00 !important;
+    border: none !important;
+    font-weight: 500;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px !important;
+}
+
+.custom-switch {
+  padding-right: 11.8rem !important;
+      font-family: 'Press Start 2P', cursive !important;
+    font-size: 8.3px !important;
+}
+
+.custom-switch label {
+padding-top: .4rem !important;
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:visited, .btn-primary:focus   {
+    margin-left: 5px;
+    background-color: #B3A125 !important;
+    border: none !important;
+}
+
+.disabled {
+  background-color: red !important;
+}
+
+[class='custom-control-input']:checked ~ [class='custom-control-label']::before {
+
+        background-color: #FFDE00 !important;
+        border-color: #FFDE00 !important;
+
+}
+
+.lds-circle {
+    display: inline-block;
+    transform: translateZ(1px);
+  }
+  .lds-circle > div {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin: 8px;
+    border-radius: 50%;
+    color: linear-gradient(to bottom, #ff0000 50%, #eeeeee 50%);
+    background: url('/Users/miguelhem/Desktop/Pokedex/pokedex-app/src/pokeball-icon.svg');
+    animation: lds-circle 2.4s cubic-bezier(0, 0.2, 0.6, 0.8) infinite;
+    box-shadow: 7px 10px 12px -5px rgba(0,0,0,0.56);
+
+  }
+  @keyframes lds-circle {
+    0%, 100% {
+      animation-timing-function: cubic-bezier(1, 0, 2, 1);
+    }
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(1800deg);
+      animation-timing-function: cubic-bezier(0, 1, 1, 2);
+    }
+    100% {
+      transform: rotateY(3600deg);
+    }
+  }

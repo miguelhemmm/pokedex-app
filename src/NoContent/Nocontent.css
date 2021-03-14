@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.Nocontent {
+    display: inline-block;
+}
+
+.Nocontent > div {
+    display: inline-block;
+    width: 30.3rem;
+    height: 10rem;
+    background-repeat: no-repeat;
+    background: url('/Users/miguelhem/Desktop/Pokedex/pokedex-app/src/Pokemon.svg');
+}
+.Nocontent > p {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 30px;
+}

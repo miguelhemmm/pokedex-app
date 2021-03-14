@@ -1,0 +1,17 @@
+.Pokedex-header {
+display: inline-block;
+}
+
+.Pokedex-header > div {
+    display: inline-block;
+}
+.title > p {
+    margin: 10px;
+    font-size: 50px;
+    color: #FFDE00
+}
+
+.about {
+position: relative;
+}
+
