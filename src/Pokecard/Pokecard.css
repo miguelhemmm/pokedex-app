@@ -13,7 +13,7 @@
   color: #000;
   background: #fcf8ec;
   width: 200px;
-  height: 180px;
+  height: 200px;
   padding: 10px;
   margin: 1rem;
   border-top: 4px solid #383e56;
@@ -90,8 +90,8 @@
 
 @media (max-width: 576px) {
   .pokecard {
-  width: 135px;
-  height: 135px;
+  width: 145px;
+  height: 145px;
   margin: .8rem;
   }
 
