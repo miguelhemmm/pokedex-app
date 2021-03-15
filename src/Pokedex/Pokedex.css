@@ -39,10 +39,6 @@ padding-top: .4rem !important;
     border: none !important;
 }
 
-.disabled {
-  background-color: red !important;
-}
-
 [class='custom-control-input']:checked ~ [class='custom-control-label']::before {
 
         background-color: #FFDE00 !important;

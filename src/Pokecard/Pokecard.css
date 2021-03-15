@@ -35,3 +35,11 @@
 .pokecard-inner {
     display: inline;
 }
+
+.modal-body {
+    font-family: 'Press Start 2P', cursive !important;
+    background:  #FFDE00;
+    color: #3B4CCA;
+    border: #FF0000 solid 2px !important;
+    border-radius: 2px;
+}

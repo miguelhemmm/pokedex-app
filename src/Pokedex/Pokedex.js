@@ -4,9 +4,10 @@ import {  retry } from 'rxjs/operators';
 import Pokecard from "../Pokecard/Pokecard";
 import { sortPokemon, paginate, filterPokemon, filterBySearch } from '../shared/helper';
 import './Pokedex.css'
-import { FormCheck } from 'react-bootstrap';
+import { FormCheck, Modal } from 'react-bootstrap';
 import Pagination from "../Pagination/Pagination";
 import Nocontent from "../NoContent/Nocontent";
+
 
 
 
@@ -18,6 +19,8 @@ export default function PokedexHooks() {
     const [searchValue, setFilter] = useState('');
     const [noPokemonFound, setError] = useState(false);
     const [searchParameter, setParameter] = useState(false);
+    const [smShow, setSmShow] = useState(false);
+    const [pokemonInfo, setPokemonInfo] = useState('');
 
     useEffect (() => {
         fromPromise(
@@ -68,7 +71,8 @@ export default function PokedexHooks() {
     }
 
     const onClickCard = (e) => {
-        console.log(e)
+        setPokemonInfo(e.target.alt)
+        setSmShow(true)
     }
 
     let pokemon = [];
@@ -76,14 +80,14 @@ export default function PokedexHooks() {
     if (paginatedPokemon && paginatedPokemon.length) {
     for (let i = 0; i<paginatedPokemon.length; i++) {
         pokemon.push(
-        <div key={paginatedPokemon[i]?.num} onClick={onClickCard}>
+        <div key={paginatedPokemon[i]?.num}>
             <Pokecard
-          key={paginatedPokemon[i]?.num}
           num={paginatedPokemon[i]?.num}
           name={paginatedPokemon[i]?.name}
           type={paginatedPokemon[i]?.variations[0].types}
           specie={paginatedPokemon[i]?.variations[0].specie}
-          data={paginatedPokemon[i]?.variations}/>
+          data={paginatedPokemon[i]?.variations}
+          onClickCard={onClickCard}/>
         </div>)
       }
 
@@ -118,6 +122,13 @@ export default function PokedexHooks() {
             currentPage={currentPage}
             paginatedPokemon={paginatedPokemon}
             setCurrentPage={setCurrentPage}/> : ''}
+      <Modal
+        size="sm"
+        show={smShow}
+        onHide={() => setSmShow(false)}
+        aria-labelledby="example-modal-sizes-title-sm">
+        <Modal.Body>{pokemonInfo}</Modal.Body>
+      </Modal>
     </div>
     )
 }
