@@ -58,18 +58,21 @@ padding-top: .4rem !important;
   }
   .custom-switch {
     font-size: 6px !important;
+    padding: 0;
+    padding-left: 6.5vh;
+    float: left;
   }
 
   .custom-switch label{
     padding-top: .5rem !important;
   }
 
+  .custom-control {
+    padding: 0;
+  }
+
  }
 
- input .search-query {
-	font-family: 'Press Start 2P', cursive !important;
-	font-size: 12px !important;
-}
 
 .lds-circle {
     display: inline-block;
