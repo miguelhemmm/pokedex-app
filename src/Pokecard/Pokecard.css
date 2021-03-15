@@ -87,3 +87,29 @@
 .modal-body:after {
   right: -5px;
 }
+
+@media (max-width: 576px) {
+  .pokecard {
+  width: 135px;
+  height: 135px;
+  margin: .8rem;
+  }
+
+  .pokecard-title, .pokecard-text p {
+  font-size: 8px;
+  }
+
+  .pokecard-img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+
+}
+
+  .pokecard-img:hover {
+      width: 65px;
+      height: 65px;
+  }
+
+
+ }
