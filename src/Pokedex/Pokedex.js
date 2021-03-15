@@ -102,7 +102,7 @@ export default function PokedexHooks() {
             </div>
             <div className="search-bar">
                 <div className="d-flex search-bar">
-                    <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" onChange={handleChange} onKeyDown={handleChange}/>
+                    <input className="form-control me-2" type="search" placeholder="Search Pokemon" aria-label="Search" onChange={handleChange} onKeyDown={handleChange}/>
                     <button className="btn btn-primary" type="button" onClick={onFilter}>Search</button>
                 </div>
                 <FormCheck

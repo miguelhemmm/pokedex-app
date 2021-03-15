@@ -15,3 +15,9 @@ display: inline-block;
 position: relative;
 }
 
+@media (max-width: 576px) {
+.title > p {
+    font-size: 30px;
+}
+
+ }

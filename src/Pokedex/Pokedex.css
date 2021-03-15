@@ -25,8 +25,8 @@
 
 .custom-switch {
   padding-right: 11.8rem !important;
-      font-family: 'Press Start 2P', cursive !important;
-    font-size: 8.3px !important;
+  font-family: 'Press Start 2P', cursive !important;
+  font-size: 8.3px !important;
 }
 
 .custom-switch label {
@@ -44,6 +44,31 @@ padding-top: .4rem !important;
         background-color: #FFDE00 !important;
         border-color: #FFDE00 !important;
 
+}
+
+@media (max-width: 576px) {
+  .sorting-buttons {
+    opacity: 0%;
+    position: absolute;
+    pointer-events: none;
+  }
+
+  .Pokedex-buttons .search-bar {
+    width: 100%;
+  }
+  .custom-switch {
+    font-size: 6px !important;
+  }
+
+  .custom-switch label{
+    padding-top: .5rem !important;
+  }
+
+ }
+
+ input .search-query {
+	font-family: 'Press Start 2P', cursive !important;
+	font-size: 12px !important;
 }
 
 .lds-circle {
@@ -77,3 +102,25 @@ padding-top: .4rem !important;
       transform: rotateY(3600deg);
     }
   }
+
+  .form-control {
+    font-family: 'Press Start 2P', cursive !important;
+    font-size: 10px !important;
+    border: 3px solid #383e56 !important;
+}
+
+.form-control:before,
+.form-control:after {
+  content: ''!important;
+  top: 0 !important;
+  width: 4px !important;
+  height: 100% !important;
+  position: absolute !important;
+  background: #383e56 !important;
+}
+.form-control:before {
+  left: -4px !important;
+}
+.form-control:after {
+  right: -4px !important;
+}

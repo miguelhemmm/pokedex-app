@@ -1,4 +1,4 @@
-.pokecard {
+/* .pokecard {
     margin: 1rem;
     box-shadow: 7px 10px 12px -5px rgba(0,0,0,0.56);
     padding: 10px;
@@ -6,6 +6,34 @@
     height: 180px;
     border-radius: 5px;
     background: #fcf8ec;
+} */
+
+.pokecard {
+  display: block;
+  color: #000;
+  background: #fcf8ec;
+  width: 200px;
+  height: 180px;
+  padding: 10px;
+  margin: 1rem;
+  border-top: 4px solid #383e56;
+  border-bottom: 4px solid #383e56;
+  position: relative;
+}
+.pokecard:before,
+.pokecard:after {
+  content: '';
+  top: 0;
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  background: #383e56;
+}
+.pokecard:before {
+  left: -4px;
+}
+.pokecard:after {
+  right: -4px;
 }
 
 .pokecard-img {
@@ -40,6 +68,22 @@
     font-family: 'Press Start 2P', cursive !important;
     background:  #FFDE00;
     color: #3B4CCA;
-    border: #FF0000 solid 2px !important;
-    border-radius: 2px;
+    border-top: 5px solid #FF0000;
+    border-bottom: 5px solid #FF0000;
+}
+
+.modal-body:before,
+.modal-body:after {
+  content: '';
+  top: 0;
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  background: #FF0000;
+}
+.modal-body:before {
+  left: -5px;
+}
+.modal-body:after {
+  right: -5px;
 }
